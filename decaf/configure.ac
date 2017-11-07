@@ -25,6 +25,16 @@ AC_CONFIG_AUX_DIR(config)
 AC_CONFIG_SRCDIR(src/main/decaf/)
 AC_CONFIG_MACRO_DIR([m4])
 
+## ------------------------------------------------------------
+## Define the Version variables for the ActiveMQ-CPP Library
+## ------------------------------------------------------------
+DECAF_LIBRARY_NAME=decaf
+DECAF_MAJOR_VERSION=3
+DECAF_MINOR_VERSION=9
+DECAF_PATCH_VERSION=4
+DECAF_VERSION=${DECAF_MAJOR_VERSION}.${DECAF_MINOR_VERSION}.${DECAF_PATCH_VERSION}
+DECAF_API_VERSION=${DECAF_VERSION}
+
 ## When releasing a new version the ACTIVEMQ_LIBRARY_VERSION needs to be updated.
 ## The following rules apply to the numbers in the version as defined by libtool.
 ##
