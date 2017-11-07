@@ -14,12 +14,12 @@ target
 eclipse-classes
 build
 dependency-reduced-pom.xml
-activemq-cpp/autom4te.cache/
-activemq-cpp/m4/
-activemq-cpp/config/
+decaf/autom4te.cache/
+decaf/m4/
+decaf/config/
 Makefile.in
-activemq-cpp/aclocal.m4
-activemq-cpp/config.h.in
+decaf/aclocal.m4
+decaf/config.h.in
 configure
 
 

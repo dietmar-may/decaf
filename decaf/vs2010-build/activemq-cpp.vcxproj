@@ -1,0 +1,1528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugDLL|Win32">
+      <Configuration>DebugDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDLL|x64">
+      <Configuration>DebugDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugSSL-DLL|Win32">
+      <Configuration>DebugSSL-DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugSSL-DLL|x64">
+      <Configuration>DebugSSL-DLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugSSL|Win32">
+      <Configuration>DebugSSL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugSSL|x64">
+      <Configuration>DebugSSL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLL|Win32">
+      <Configuration>ReleaseDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLL|x64">
+      <Configuration>ReleaseDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseSSL-DLL|Win32">
+      <Configuration>ReleaseSSL-DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseSSL-DLL|x64">
+      <Configuration>ReleaseSSL-DLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseSSL|Win32">
+      <Configuration>ReleaseSSL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseSSL|x64">
+      <Configuration>ReleaseSSL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\main\decaf\internal\AprPool.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\DecafRuntime.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\io\StandardErrorOutputStream.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\io\StandardInputStream.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\io\StandardOutputStream.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\net\DefaultServerSocketFactory.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\net\DefaultSocketFactory.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\net\file\FileHandler.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\net\https\HttpsHandler.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\net\http\HttpHandler.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\net\Network.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\net\SocketFileDescriptor.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\net\ssl\DefaultSSLContext.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\net\ssl\DefaultSSLServerSocketFactory.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\net\ssl\DefaultSSLSocketFactory.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\net\ssl\openssl\OpenSSLContextSpi.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\net\ssl\openssl\OpenSSLParameters.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\net\ssl\openssl\OpenSSLServerSocket.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\net\ssl\openssl\OpenSSLServerSocketFactory.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\net\ssl\openssl\OpenSSLSocket.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\net\ssl\openssl\OpenSSLSocketException.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\net\ssl\openssl\OpenSSLSocketFactory.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\net\ssl\openssl\OpenSSLSocketInputStream.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\net\ssl\openssl\OpenSSLSocketOutputStream.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\net\tcp\TcpSocket.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\net\tcp\TcpSocketInputStream.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\net\tcp\TcpSocketOutputStream.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\net\URIEncoderDecoder.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\net\URIHelper.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\net\URIType.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\net\URLStreamHandlerManager.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\net\URLType.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\net\URLUtils.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\nio\BufferFactory.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\nio\ByteArrayBuffer.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\nio\CharArrayBuffer.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\nio\DoubleArrayBuffer.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\nio\FloatArrayBuffer.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\nio\IntArrayBuffer.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\nio\LongArrayBuffer.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\nio\ShortArrayBuffer.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\security\Engine.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\security\provider\crypto\MD4MessageDigestSpi.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\security\provider\crypto\MD5MessageDigestSpi.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\security\provider\crypto\SHA1MessageDigestSpi.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\security\provider\DefaultMessageDigestProviderService.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\security\provider\DefaultProvider.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\security\provider\DefaultSecureRandomProviderService.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\security\SecurityRuntime.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\security\ServiceRegistry.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\security\windows\SecureRandomImpl.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\util\ByteArrayAdapter.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\util\concurrent\ExecutorsSupport.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\util\concurrent\SynchronizableImpl.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\util\concurrent\Threading.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\util\concurrent\ThreadLocalImpl.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\util\concurrent\windows\Atomics.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\util\concurrent\windows\PlatformThread.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\util\GenericResource.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\util\HexStringParser.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\util\Resource.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\util\ResourceLifecycleManager.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\util\StringUtils.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\util\TimerTaskHeap.cpp" />
+    <ClCompile Include="..\src\main\decaf\internal\util\zip\adler32.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSSL|Win32'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSSL-DLL|Win32'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSSL|x64'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSSL-DLL|x64'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL|Win32'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL-DLL|Win32'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL|x64'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL-DLL|x64'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\main\decaf\internal\util\zip\crc32.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSSL|Win32'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSSL-DLL|Win32'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSSL|x64'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSSL-DLL|x64'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL|Win32'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL-DLL|Win32'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL|x64'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL-DLL|x64'">$(IntDir)\%(FileName)ZLib.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\main\decaf\internal\util\zip\deflate.c" />
+    <ClCompile Include="..\src\main\decaf\internal\util\zip\gzclose.c" />
+    <ClCompile Include="..\src\main\decaf\internal\util\zip\gzlib.c" />
+    <ClCompile Include="..\src\main\decaf\internal\util\zip\gzread.c" />
+    <ClCompile Include="..\src\main\decaf\internal\util\zip\gzwrite.c" />
+    <ClCompile Include="..\src\main\decaf\internal\util\zip\infback.c" />
+    <ClCompile Include="..\src\main\decaf\internal\util\zip\inffast.c" />
+    <ClCompile Include="..\src\main\decaf\internal\util\zip\inflate.c" />
+    <ClCompile Include="..\src\main\decaf\internal\util\zip\inftrees.c" />
+    <ClCompile Include="..\src\main\decaf\internal\util\zip\trees.c" />
+    <ClCompile Include="..\src\main\decaf\internal\util\zip\uncompr.c" />
+    <ClCompile Include="..\src\main\decaf\internal\util\zip\zutil.c" />
+    <ClCompile Include="..\src\main\decaf\io\BlockingByteArrayInputStream.cpp" />
+    <ClCompile Include="..\src\main\decaf\io\BufferedInputStream.cpp" />
+    <ClCompile Include="..\src\main\decaf\io\BufferedOutputStream.cpp" />
+    <ClCompile Include="..\src\main\decaf\io\ByteArrayInputStream.cpp" />
+    <ClCompile Include="..\src\main\decaf\io\ByteArrayOutputStream.cpp" />
+    <ClCompile Include="..\src\main\decaf\io\Closeable.cpp" />
+    <ClCompile Include="..\src\main\decaf\io\DataInput.cpp" />
+    <ClCompile Include="..\src\main\decaf\io\DataInputStream.cpp" />
+    <ClCompile Include="..\src\main\decaf\io\DataOutput.cpp" />
+    <ClCompile Include="..\src\main\decaf\io\DataOutputStream.cpp" />
+    <ClCompile Include="..\src\main\decaf\io\EOFException.cpp" />
+    <ClCompile Include="..\src\main\decaf\io\FileDescriptor.cpp" />
+    <ClCompile Include="..\src\main\decaf\io\FilterInputStream.cpp" />
+    <ClCompile Include="..\src\main\decaf\io\FilterOutputStream.cpp" />
+    <ClCompile Include="..\src\main\decaf\io\Flushable.cpp" />
+    <ClCompile Include="..\src\main\decaf\io\InputStream.cpp" />
+    <ClCompile Include="..\src\main\decaf\io\InputStreamReader.cpp" />
+    <ClCompile Include="..\src\main\decaf\io\InterruptedIOException.cpp" />
+    <ClCompile Include="..\src\main\decaf\io\IOException.cpp" />
+    <ClCompile Include="..\src\main\decaf\io\OutputStream.cpp" />
+    <ClCompile Include="..\src\main\decaf\io\OutputStreamWriter.cpp" />
+    <ClCompile Include="..\src\main\decaf\io\PushbackInputStream.cpp" />
+    <ClCompile Include="..\src\main\decaf\io\Reader.cpp" />
+    <ClCompile Include="..\src\main\decaf\io\UnsupportedEncodingException.cpp" />
+    <ClCompile Include="..\src\main\decaf\io\UTFDataFormatException.cpp" />
+    <ClCompile Include="..\src\main\decaf\io\Writer.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\AbstractStringBuilder.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\Appendable.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\Boolean.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\Byte.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\Character.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\CharSequence.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\Comparable.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\Double.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\Exception.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\exceptions\ArrayIndexOutOfBoundsException.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\exceptions\ClassCastException.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\exceptions\CloneNotSupportedException.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\exceptions\IllegalArgumentException.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\exceptions\IllegalMonitorStateException.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\exceptions\IllegalStateException.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\exceptions\IllegalThreadStateException.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\exceptions\IndexOutOfBoundsException.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\exceptions\InterruptedException.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\exceptions\InvalidStateException.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\exceptions\NegativeArraySizeException.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\exceptions\NullPointerException.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\exceptions\NumberFormatException.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\exceptions\OutOfMemoryError.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\exceptions\RuntimeException.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\exceptions\SecurityException.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\exceptions\StringIndexOutOfBoundsException.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\exceptions\UnsupportedOperationException.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\Float.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\Integer.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\Iterable.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\Long.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\Math.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\Number.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\Readable.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\Runnable.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\Runtime.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\Short.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\String.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\StringBuffer.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\StringBuilder.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\System.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\Thread.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\ThreadGroup.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\ThreadLocal.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\Throwable.cpp" />
+    <ClCompile Include="..\src\main\decaf\lang\Types.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\BindException.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\ConnectException.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\ContentHandlerFactory.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\DatagramPacket.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\FileNameMap.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\HttpRetryException.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\HttpURLConnection.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\Inet4Address.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\Inet6Address.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\InetAddress.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\InetSocketAddress.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\MalformedURLException.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\NoRouteToHostException.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\PortUnreachableException.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\ProtocolException.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\Proxy.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\ServerSocket.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\ServerSocketFactory.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\Socket.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\SocketAddress.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\SocketError.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\SocketException.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\SocketFactory.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\SocketImpl.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\SocketImplFactory.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\SocketOptions.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\SocketTimeoutException.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\ssl\SSLContext.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\ssl\SSLContextSpi.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\ssl\SSLParameters.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\ssl\SSLServerSocket.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\ssl\SSLServerSocketFactory.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\ssl\SSLSocket.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\ssl\SSLSocketFactory.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\UnknownHostException.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\UnknownServiceException.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\URI.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\URISyntaxException.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\URL.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\URLConnection.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\URLDecoder.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\URLEncoder.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\URLStreamHandler.cpp" />
+    <ClCompile Include="..\src\main\decaf\net\URLStreamHandlerFactory.cpp" />
+    <ClCompile Include="..\src\main\decaf\nio\Buffer.cpp" />
+    <ClCompile Include="..\src\main\decaf\nio\BufferOverflowException.cpp" />
+    <ClCompile Include="..\src\main\decaf\nio\BufferUnderflowException.cpp" />
+    <ClCompile Include="..\src\main\decaf\nio\ByteBuffer.cpp" />
+    <ClCompile Include="..\src\main\decaf\nio\CharBuffer.cpp" />
+    <ClCompile Include="..\src\main\decaf\nio\DoubleBuffer.cpp" />
+    <ClCompile Include="..\src\main\decaf\nio\FloatBuffer.cpp" />
+    <ClCompile Include="..\src\main\decaf\nio\IntBuffer.cpp" />
+    <ClCompile Include="..\src\main\decaf\nio\InvalidMarkException.cpp" />
+    <ClCompile Include="..\src\main\decaf\nio\LongBuffer.cpp" />
+    <ClCompile Include="..\src\main\decaf\nio\ReadOnlyBufferException.cpp" />
+    <ClCompile Include="..\src\main\decaf\nio\ShortBuffer.cpp" />
+    <ClCompile Include="..\src\main\decaf\security\auth\x500\X500Principal.cpp" />
+    <ClCompile Include="..\src\main\decaf\security\cert\Certificate.cpp" />
+    <ClCompile Include="..\src\main\decaf\security\cert\CertificateEncodingException.cpp" />
+    <ClCompile Include="..\src\main\decaf\security\cert\CertificateException.cpp" />
+    <ClCompile Include="..\src\main\decaf\security\cert\CertificateExpiredException.cpp" />
+    <ClCompile Include="..\src\main\decaf\security\cert\CertificateNotYetValidException.cpp" />
+    <ClCompile Include="..\src\main\decaf\security\cert\CertificateParsingException.cpp" />
+    <ClCompile Include="..\src\main\decaf\security\cert\X509Certificate.cpp" />
+    <ClCompile Include="..\src\main\decaf\security\DigestException.cpp" />
+    <ClCompile Include="..\src\main\decaf\security\GeneralSecurityException.cpp" />
+    <ClCompile Include="..\src\main\decaf\security\InvalidKeyException.cpp" />
+    <ClCompile Include="..\src\main\decaf\security\Key.cpp" />
+    <ClCompile Include="..\src\main\decaf\security\KeyException.cpp" />
+    <ClCompile Include="..\src\main\decaf\security\KeyManagementException.cpp" />
+    <ClCompile Include="..\src\main\decaf\security\MessageDigest.cpp" />
+    <ClCompile Include="..\src\main\decaf\security\MessageDigestSpi.cpp" />
+    <ClCompile Include="..\src\main\decaf\security\NoSuchAlgorithmException.cpp" />
+    <ClCompile Include="..\src\main\decaf\security\NoSuchProviderException.cpp" />
+    <ClCompile Include="..\src\main\decaf\security\Principal.cpp" />
+    <ClCompile Include="..\src\main\decaf\security\Provider.cpp" />
+    <ClCompile Include="..\src\main\decaf\security\ProviderException.cpp" />
+    <ClCompile Include="..\src\main\decaf\security\ProviderService.cpp" />
+    <ClCompile Include="..\src\main\decaf\security\PublicKey.cpp" />
+    <ClCompile Include="..\src\main\decaf\security\SecureRandom.cpp" />
+    <ClCompile Include="..\src\main\decaf\security\SecureRandomSpi.cpp" />
+    <ClCompile Include="..\src\main\decaf\security\Security.cpp" />
+    <ClCompile Include="..\src\main\decaf\security\SecuritySpi.cpp" />
+    <ClCompile Include="..\src\main\decaf\security\SignatureException.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\AbstractCollection.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\AbstractList.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\AbstractMap.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\AbstractQueue.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\AbstractSequentialList.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\AbstractSet.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\ArrayList.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\Arrays.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\BitSet.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\Collection.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\Collections.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\Comparator.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\comparators\Less.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\ConcurrentModificationException.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\AbstractExecutorService.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\atomic\AtomicBoolean.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\atomic\AtomicInteger.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\atomic\AtomicRefCounter.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\atomic\AtomicReference.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\BlockingQueue.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\BrokenBarrierException.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\Callable.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\CancellationException.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\ConcurrentHashMap.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\ConcurrentMap.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\ConcurrentStlMap.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\CopyOnWriteArrayList.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\CopyOnWriteArraySet.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\CountDownLatch.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\Delayed.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\ExecutionException.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\Executor.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\Executors.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\ExecutorService.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\Future.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\FutureTask.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\LinkedBlockingQueue.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\Lock.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)\%(FileName)Decaf.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSSL|Win32'">$(IntDir)\%(FileName)Decaf.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">$(IntDir)\%(FileName)Decaf.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSSL-DLL|Win32'">$(IntDir)\%(FileName)Decaf.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)\%(FileName)Decaf.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSSL|x64'">$(IntDir)\%(FileName)Decaf.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">$(IntDir)\%(FileName)Decaf.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSSL-DLL|x64'">$(IntDir)\%(FileName)Decaf.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)\%(FileName)Decaf.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL|Win32'">$(IntDir)\%(FileName)Decaf.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">$(IntDir)\%(FileName)Decaf.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL-DLL|Win32'">$(IntDir)\%(FileName)Decaf.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)\%(FileName)Decaf.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL|x64'">$(IntDir)\%(FileName)Decaf.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">$(IntDir)\%(FileName)Decaf.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL-DLL|x64'">$(IntDir)\%(FileName)Decaf.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\src\main\decaf\util\concurrent\locks\AbstractOwnableSynchronizer.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\locks\AbstractQueuedSynchronizer.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\locks\Condition.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\locks\Lock.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\locks\LockSupport.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\locks\ReadWriteLock.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\locks\ReentrantLock.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\locks\ReentrantReadWriteLock.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\Mutex.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\RejectedExecutionException.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\RejectedExecutionHandler.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\RunnableFuture.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\Semaphore.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\Synchronizable.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\SynchronousQueue.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\ThreadFactory.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\ThreadPoolExecutor.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\TimeoutException.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\concurrent\TimeUnit.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\Date.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\Deque.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\HashCode.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\HashMap.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\HashSet.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\Iterator.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\LinkedHashMap.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\LinkedHashSet.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\LinkedList.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\List.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\ListIterator.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\logging\ConsoleHandler.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\logging\ErrorManager.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\logging\Formatter.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\logging\Handler.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\logging\Level.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\logging\Logger.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\logging\LoggerHierarchy.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\logging\LogManager.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\logging\LogRecord.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\logging\LogWriter.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\logging\SimpleFormatter.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\logging\SimpleLogger.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\logging\StreamHandler.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\logging\XMLFormatter.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\LRUCache.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\Map.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\MapEntry.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\NoSuchElementException.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\PriorityQueue.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\Properties.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\Queue.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\Random.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\Set.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\StlList.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\StlMap.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\StlQueue.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\StlSet.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\StringTokenizer.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\Timer.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\TimerTask.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\UUID.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\zip\Adler32.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\zip\CheckedInputStream.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\zip\CheckedOutputStream.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\zip\Checksum.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\zip\CRC32.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\zip\DataFormatException.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\zip\Deflater.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\zip\DeflaterOutputStream.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\zip\Inflater.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\zip\InflaterInputStream.cpp" />
+    <ClCompile Include="..\src\main\decaf\util\zip\ZipException.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\main\decaf\internal\AprPool.h" />
+    <ClInclude Include="..\src\main\decaf\internal\DecafRuntime.h" />
+    <ClInclude Include="..\src\main\decaf\internal\io\StandardErrorOutputStream.h" />
+    <ClInclude Include="..\src\main\decaf\internal\io\StandardInputStream.h" />
+    <ClInclude Include="..\src\main\decaf\internal\io\StandardOutputStream.h" />
+    <ClInclude Include="..\src\main\decaf\internal\net\DefaultServerSocketFactory.h" />
+    <ClInclude Include="..\src\main\decaf\internal\net\DefaultSocketFactory.h" />
+    <ClInclude Include="..\src\main\decaf\internal\net\file\FileHandler.h" />
+    <ClInclude Include="..\src\main\decaf\internal\net\https\HttpsHandler.h" />
+    <ClInclude Include="..\src\main\decaf\internal\net\http\HttpHandler.h" />
+    <ClInclude Include="..\src\main\decaf\internal\net\Network.h" />
+    <ClInclude Include="..\src\main\decaf\internal\net\SocketFileDescriptor.h" />
+    <ClInclude Include="..\src\main\decaf\internal\net\ssl\DefaultSSLContext.h" />
+    <ClInclude Include="..\src\main\decaf\internal\net\ssl\DefaultSSLServerSocketFactory.h" />
+    <ClInclude Include="..\src\main\decaf\internal\net\ssl\DefaultSSLSocketFactory.h" />
+    <ClInclude Include="..\src\main\decaf\internal\net\ssl\openssl\OpenSSLContextSpi.h" />
+    <ClInclude Include="..\src\main\decaf\internal\net\ssl\openssl\OpenSSLParameters.h" />
+    <ClInclude Include="..\src\main\decaf\internal\net\ssl\openssl\OpenSSLServerSocket.h" />
+    <ClInclude Include="..\src\main\decaf\internal\net\ssl\openssl\OpenSSLServerSocketFactory.h" />
+    <ClInclude Include="..\src\main\decaf\internal\net\ssl\openssl\OpenSSLSocket.h" />
+    <ClInclude Include="..\src\main\decaf\internal\net\ssl\openssl\OpenSSLSocketException.h" />
+    <ClInclude Include="..\src\main\decaf\internal\net\ssl\openssl\OpenSSLSocketFactory.h" />
+    <ClInclude Include="..\src\main\decaf\internal\net\ssl\openssl\OpenSSLSocketInputStream.h" />
+    <ClInclude Include="..\src\main\decaf\internal\net\ssl\openssl\OpenSSLSocketOutputStream.h" />
+    <ClInclude Include="..\src\main\decaf\internal\net\tcp\TcpSocket.h" />
+    <ClInclude Include="..\src\main\decaf\internal\net\tcp\TcpSocketInputStream.h" />
+    <ClInclude Include="..\src\main\decaf\internal\net\tcp\TcpSocketOutputStream.h" />
+    <ClInclude Include="..\src\main\decaf\internal\net\URIEncoderDecoder.h" />
+    <ClInclude Include="..\src\main\decaf\internal\net\URIHelper.h" />
+    <ClInclude Include="..\src\main\decaf\internal\net\URIType.h" />
+    <ClInclude Include="..\src\main\decaf\internal\net\URLStreamHandlerManager.h" />
+    <ClInclude Include="..\src\main\decaf\internal\net\URLType.h" />
+    <ClInclude Include="..\src\main\decaf\internal\net\URLUtils.h" />
+    <ClInclude Include="..\src\main\decaf\internal\nio\BufferFactory.h" />
+    <ClInclude Include="..\src\main\decaf\internal\nio\ByteArrayBuffer.h" />
+    <ClInclude Include="..\src\main\decaf\internal\nio\CharArrayBuffer.h" />
+    <ClInclude Include="..\src\main\decaf\internal\nio\DoubleArrayBuffer.h" />
+    <ClInclude Include="..\src\main\decaf\internal\nio\FloatArrayBuffer.h" />
+    <ClInclude Include="..\src\main\decaf\internal\nio\IntArrayBuffer.h" />
+    <ClInclude Include="..\src\main\decaf\internal\nio\LongArrayBuffer.h" />
+    <ClInclude Include="..\src\main\decaf\internal\nio\ShortArrayBuffer.h" />
+    <ClInclude Include="..\src\main\decaf\internal\security\Engine.h" />
+    <ClInclude Include="..\src\main\decaf\internal\security\provider\crypto\MD4MessageDigestSpi.h" />
+    <ClInclude Include="..\src\main\decaf\internal\security\provider\crypto\MD5MessageDigestSpi.h" />
+    <ClInclude Include="..\src\main\decaf\internal\security\provider\crypto\SHA1MessageDigestSpi.h" />
+    <ClInclude Include="..\src\main\decaf\internal\security\provider\DefaultMessageDigestProviderService.h" />
+    <ClInclude Include="..\src\main\decaf\internal\security\provider\DefaultProvider.h" />
+    <ClInclude Include="..\src\main\decaf\internal\security\provider\DefaultSecureRandomProviderService.h" />
+    <ClInclude Include="..\src\main\decaf\internal\security\SecurityRuntime.h" />
+    <ClInclude Include="..\src\main\decaf\internal\security\ServiceRegistry.h" />
+    <ClInclude Include="..\src\main\decaf\internal\security\windows\SecureRandomImpl.h" />
+    <ClInclude Include="..\src\main\decaf\internal\util\ByteArrayAdapter.h" />
+    <ClInclude Include="..\src\main\decaf\internal\util\concurrent\Atomics.h" />
+    <ClInclude Include="..\src\main\decaf\internal\util\concurrent\ExecutorsSupport.h" />
+    <ClInclude Include="..\src\main\decaf\internal\util\concurrent\PlatformThread.h" />
+    <ClInclude Include="..\src\main\decaf\internal\util\concurrent\SynchronizableImpl.h" />
+    <ClInclude Include="..\src\main\decaf\internal\util\concurrent\Threading.h" />
+    <ClInclude Include="..\src\main\decaf\internal\util\concurrent\ThreadingTypes.h" />
+    <ClInclude Include="..\src\main\decaf\internal\util\concurrent\ThreadLocalImpl.h" />
+    <ClInclude Include="..\src\main\decaf\internal\util\concurrent\Transferer.h" />
+    <ClInclude Include="..\src\main\decaf\internal\util\concurrent\TransferQueue.h" />
+    <ClInclude Include="..\src\main\decaf\internal\util\concurrent\TransferStack.h" />
+    <ClInclude Include="..\src\main\decaf\internal\util\concurrent\windows\PlatformDefs.h" />
+    <ClInclude Include="..\src\main\decaf\internal\util\GenericResource.h" />
+    <ClInclude Include="..\src\main\decaf\internal\util\HexStringParser.h" />
+    <ClInclude Include="..\src\main\decaf\internal\util\Resource.h" />
+    <ClInclude Include="..\src\main\decaf\internal\util\ResourceLifecycleManager.h" />
+    <ClInclude Include="..\src\main\decaf\internal\util\StringUtils.h" />
+    <ClInclude Include="..\src\main\decaf\internal\util\TimerTaskHeap.h" />
+    <ClInclude Include="..\src\main\decaf\internal\util\zip\crc32.h" />
+    <ClInclude Include="..\src\main\decaf\internal\util\zip\deflate.h" />
+    <ClInclude Include="..\src\main\decaf\internal\util\zip\gzguts.h" />
+    <ClInclude Include="..\src\main\decaf\internal\util\zip\inffast.h" />
+    <ClInclude Include="..\src\main\decaf\internal\util\zip\inffixed.h" />
+    <ClInclude Include="..\src\main\decaf\internal\util\zip\inflate.h" />
+    <ClInclude Include="..\src\main\decaf\internal\util\zip\inftrees.h" />
+    <ClInclude Include="..\src\main\decaf\internal\util\zip\trees.h" />
+    <ClInclude Include="..\src\main\decaf\internal\util\zip\zconf.h" />
+    <ClInclude Include="..\src\main\decaf\internal\util\zip\zlib.h" />
+    <ClInclude Include="..\src\main\decaf\internal\util\zip\zutil.h" />
+    <ClInclude Include="..\src\main\decaf\io\BlockingByteArrayInputStream.h" />
+    <ClInclude Include="..\src\main\decaf\io\BufferedInputStream.h" />
+    <ClInclude Include="..\src\main\decaf\io\BufferedOutputStream.h" />
+    <ClInclude Include="..\src\main\decaf\io\ByteArrayInputStream.h" />
+    <ClInclude Include="..\src\main\decaf\io\ByteArrayOutputStream.h" />
+    <ClInclude Include="..\src\main\decaf\io\Closeable.h" />
+    <ClInclude Include="..\src\main\decaf\io\DataInput.h" />
+    <ClInclude Include="..\src\main\decaf\io\DataInputStream.h" />
+    <ClInclude Include="..\src\main\decaf\io\DataOutput.h" />
+    <ClInclude Include="..\src\main\decaf\io\DataOutputStream.h" />
+    <ClInclude Include="..\src\main\decaf\io\EOFException.h" />
+    <ClInclude Include="..\src\main\decaf\io\FileDescriptor.h" />
+    <ClInclude Include="..\src\main\decaf\io\FilterInputStream.h" />
+    <ClInclude Include="..\src\main\decaf\io\FilterOutputStream.h" />
+    <ClInclude Include="..\src\main\decaf\io\Flushable.h" />
+    <ClInclude Include="..\src\main\decaf\io\InputStream.h" />
+    <ClInclude Include="..\src\main\decaf\io\InputStreamReader.h" />
+    <ClInclude Include="..\src\main\decaf\io\InterruptedIOException.h" />
+    <ClInclude Include="..\src\main\decaf\io\IOException.h" />
+    <ClInclude Include="..\src\main\decaf\io\OutputStream.h" />
+    <ClInclude Include="..\src\main\decaf\io\OutputStreamWriter.h" />
+    <ClInclude Include="..\src\main\decaf\io\PushbackInputStream.h" />
+    <ClInclude Include="..\src\main\decaf\io\Reader.h" />
+    <ClInclude Include="..\src\main\decaf\io\UnsupportedEncodingException.h" />
+    <ClInclude Include="..\src\main\decaf\io\UTFDataFormatException.h" />
+    <ClInclude Include="..\src\main\decaf\io\Writer.h" />
+    <ClInclude Include="..\src\main\decaf\lang\AbstractStringBuilder.h" />
+    <ClInclude Include="..\src\main\decaf\lang\Appendable.h" />
+    <ClInclude Include="..\src\main\decaf\lang\ArrayPointer.h" />
+    <ClInclude Include="..\src\main\decaf\lang\Boolean.h" />
+    <ClInclude Include="..\src\main\decaf\lang\Byte.h" />
+    <ClInclude Include="..\src\main\decaf\lang\Character.h" />
+    <ClInclude Include="..\src\main\decaf\lang\CharSequence.h" />
+    <ClInclude Include="..\src\main\decaf\lang\Comparable.h" />
+    <ClInclude Include="..\src\main\decaf\lang\Double.h" />
+    <ClInclude Include="..\src\main\decaf\lang\Exception.h" />
+    <ClInclude Include="..\src\main\decaf\lang\exceptions\ArrayIndexOutOfBoundsException.h" />
+    <ClInclude Include="..\src\main\decaf\lang\exceptions\ClassCastException.h" />
+    <ClInclude Include="..\src\main\decaf\lang\exceptions\CloneNotSupportedException.h" />
+    <ClInclude Include="..\src\main\decaf\lang\exceptions\ExceptionDefines.h" />
+    <ClInclude Include="..\src\main\decaf\lang\exceptions\IllegalArgumentException.h" />
+    <ClInclude Include="..\src\main\decaf\lang\exceptions\IllegalMonitorStateException.h" />
+    <ClInclude Include="..\src\main\decaf\lang\exceptions\IllegalStateException.h" />
+    <ClInclude Include="..\src\main\decaf\lang\exceptions\IllegalThreadStateException.h" />
+    <ClInclude Include="..\src\main\decaf\lang\exceptions\IndexOutOfBoundsException.h" />
+    <ClInclude Include="..\src\main\decaf\lang\exceptions\InterruptedException.h" />
+    <ClInclude Include="..\src\main\decaf\lang\exceptions\InvalidStateException.h" />
+    <ClInclude Include="..\src\main\decaf\lang\exceptions\NegativeArraySizeException.h" />
+    <ClInclude Include="..\src\main\decaf\lang\exceptions\NullPointerException.h" />
+    <ClInclude Include="..\src\main\decaf\lang\exceptions\NumberFormatException.h" />
+    <ClInclude Include="..\src\main\decaf\lang\exceptions\OutOfMemoryError.h" />
+    <ClInclude Include="..\src\main\decaf\lang\exceptions\RuntimeException.h" />
+    <ClInclude Include="..\src\main\decaf\lang\exceptions\SecurityException.h" />
+    <ClInclude Include="..\src\main\decaf\lang\exceptions\StringIndexOutOfBoundsException.h" />
+    <ClInclude Include="..\src\main\decaf\lang\exceptions\UnsupportedOperationException.h" />
+    <ClInclude Include="..\src\main\decaf\lang\Float.h" />
+    <ClInclude Include="..\src\main\decaf\lang\Integer.h" />
+    <ClInclude Include="..\src\main\decaf\lang\Iterable.h" />
+    <ClInclude Include="..\src\main\decaf\lang\Long.h" />
+    <ClInclude Include="..\src\main\decaf\lang\Math.h" />
+    <ClInclude Include="..\src\main\decaf\lang\Number.h" />
+    <ClInclude Include="..\src\main\decaf\lang\Pointer.h" />
+    <ClInclude Include="..\src\main\decaf\lang\Readable.h" />
+    <ClInclude Include="..\src\main\decaf\lang\Runnable.h" />
+    <ClInclude Include="..\src\main\decaf\lang\Runtime.h" />
+    <ClInclude Include="..\src\main\decaf\lang\Short.h" />
+    <ClInclude Include="..\src\main\decaf\lang\String.h" />
+    <ClInclude Include="..\src\main\decaf\lang\StringBuffer.h" />
+    <ClInclude Include="..\src\main\decaf\lang\StringBuilder.h" />
+    <ClInclude Include="..\src\main\decaf\lang\System.h" />
+    <ClInclude Include="..\src\main\decaf\lang\Thread.h" />
+    <ClInclude Include="..\src\main\decaf\lang\ThreadGroup.h" />
+    <ClInclude Include="..\src\main\decaf\lang\ThreadLocal.h" />
+    <ClInclude Include="..\src\main\decaf\lang\Throwable.h" />
+    <ClInclude Include="..\src\main\decaf\lang\Types.h" />
+    <ClInclude Include="..\src\main\decaf\net\BindException.h" />
+    <ClInclude Include="..\src\main\decaf\net\ConnectException.h" />
+    <ClInclude Include="..\src\main\decaf\net\ContentHandlerFactory.h" />
+    <ClInclude Include="..\src\main\decaf\net\DatagramPacket.h" />
+    <ClInclude Include="..\src\main\decaf\net\FileNameMap.h" />
+    <ClInclude Include="..\src\main\decaf\net\HttpRetryException.h" />
+    <ClInclude Include="..\src\main\decaf\net\HttpURLConnection.h" />
+    <ClInclude Include="..\src\main\decaf\net\Inet4Address.h" />
+    <ClInclude Include="..\src\main\decaf\net\Inet6Address.h" />
+    <ClInclude Include="..\src\main\decaf\net\InetAddress.h" />
+    <ClInclude Include="..\src\main\decaf\net\InetSocketAddress.h" />
+    <ClInclude Include="..\src\main\decaf\net\MalformedURLException.h" />
+    <ClInclude Include="..\src\main\decaf\net\NoRouteToHostException.h" />
+    <ClInclude Include="..\src\main\decaf\net\PortUnreachableException.h" />
+    <ClInclude Include="..\src\main\decaf\net\ProtocolException.h" />
+    <ClInclude Include="..\src\main\decaf\net\Proxy.h" />
+    <ClInclude Include="..\src\main\decaf\net\ServerSocket.h" />
+    <ClInclude Include="..\src\main\decaf\net\ServerSocketFactory.h" />
+    <ClInclude Include="..\src\main\decaf\net\Socket.h" />
+    <ClInclude Include="..\src\main\decaf\net\SocketAddress.h" />
+    <ClInclude Include="..\src\main\decaf\net\SocketError.h" />
+    <ClInclude Include="..\src\main\decaf\net\SocketException.h" />
+    <ClInclude Include="..\src\main\decaf\net\SocketFactory.h" />
+    <ClInclude Include="..\src\main\decaf\net\SocketImpl.h" />
+    <ClInclude Include="..\src\main\decaf\net\SocketImplFactory.h" />
+    <ClInclude Include="..\src\main\decaf\net\SocketOptions.h" />
+    <ClInclude Include="..\src\main\decaf\net\SocketTimeoutException.h" />
+    <ClInclude Include="..\src\main\decaf\net\ssl\SSLContext.h" />
+    <ClInclude Include="..\src\main\decaf\net\ssl\SSLContextSpi.h" />
+    <ClInclude Include="..\src\main\decaf\net\ssl\SSLParameters.h" />
+    <ClInclude Include="..\src\main\decaf\net\ssl\SSLServerSocket.h" />
+    <ClInclude Include="..\src\main\decaf\net\ssl\SSLServerSocketFactory.h" />
+    <ClInclude Include="..\src\main\decaf\net\ssl\SSLSocket.h" />
+    <ClInclude Include="..\src\main\decaf\net\ssl\SSLSocketFactory.h" />
+    <ClInclude Include="..\src\main\decaf\net\UnknownHostException.h" />
+    <ClInclude Include="..\src\main\decaf\net\UnknownServiceException.h" />
+    <ClInclude Include="..\src\main\decaf\net\URI.h" />
+    <ClInclude Include="..\src\main\decaf\net\URISyntaxException.h" />
+    <ClInclude Include="..\src\main\decaf\net\URL.h" />
+    <ClInclude Include="..\src\main\decaf\net\URLConnection.h" />
+    <ClInclude Include="..\src\main\decaf\net\URLDecoder.h" />
+    <ClInclude Include="..\src\main\decaf\net\URLEncoder.h" />
+    <ClInclude Include="..\src\main\decaf\net\URLStreamHandler.h" />
+    <ClInclude Include="..\src\main\decaf\net\URLStreamHandlerFactory.h" />
+    <ClInclude Include="..\src\main\decaf\nio\Buffer.h" />
+    <ClInclude Include="..\src\main\decaf\nio\BufferOverflowException.h" />
+    <ClInclude Include="..\src\main\decaf\nio\BufferUnderflowException.h" />
+    <ClInclude Include="..\src\main\decaf\nio\ByteBuffer.h" />
+    <ClInclude Include="..\src\main\decaf\nio\CharBuffer.h" />
+    <ClInclude Include="..\src\main\decaf\nio\DoubleBuffer.h" />
+    <ClInclude Include="..\src\main\decaf\nio\FloatBuffer.h" />
+    <ClInclude Include="..\src\main\decaf\nio\IntBuffer.h" />
+    <ClInclude Include="..\src\main\decaf\nio\InvalidMarkException.h" />
+    <ClInclude Include="..\src\main\decaf\nio\LongBuffer.h" />
+    <ClInclude Include="..\src\main\decaf\nio\ReadOnlyBufferException.h" />
+    <ClInclude Include="..\src\main\decaf\nio\ShortBuffer.h" />
+    <ClInclude Include="..\src\main\decaf\security\auth\x500\X500Principal.h" />
+    <ClInclude Include="..\src\main\decaf\security\cert\Certificate.h" />
+    <ClInclude Include="..\src\main\decaf\security\cert\CertificateEncodingException.h" />
+    <ClInclude Include="..\src\main\decaf\security\cert\CertificateException.h" />
+    <ClInclude Include="..\src\main\decaf\security\cert\CertificateExpiredException.h" />
+    <ClInclude Include="..\src\main\decaf\security\cert\CertificateNotYetValidException.h" />
+    <ClInclude Include="..\src\main\decaf\security\cert\CertificateParsingException.h" />
+    <ClInclude Include="..\src\main\decaf\security\cert\X509Certificate.h" />
+    <ClInclude Include="..\src\main\decaf\security\DigestException.h" />
+    <ClInclude Include="..\src\main\decaf\security\GeneralSecurityException.h" />
+    <ClInclude Include="..\src\main\decaf\security\InvalidKeyException.h" />
+    <ClInclude Include="..\src\main\decaf\security\Key.h" />
+    <ClInclude Include="..\src\main\decaf\security\KeyException.h" />
+    <ClInclude Include="..\src\main\decaf\security\KeyManagementException.h" />
+    <ClInclude Include="..\src\main\decaf\security\MessageDigest.h" />
+    <ClInclude Include="..\src\main\decaf\security\MessageDigestSpi.h" />
+    <ClInclude Include="..\src\main\decaf\security\NoSuchAlgorithmException.h" />
+    <ClInclude Include="..\src\main\decaf\security\NoSuchProviderException.h" />
+    <ClInclude Include="..\src\main\decaf\security\Principal.h" />
+    <ClInclude Include="..\src\main\decaf\security\Provider.h" />
+    <ClInclude Include="..\src\main\decaf\security\ProviderException.h" />
+    <ClInclude Include="..\src\main\decaf\security\ProviderService.h" />
+    <ClInclude Include="..\src\main\decaf\security\PublicKey.h" />
+    <ClInclude Include="..\src\main\decaf\security\SecureRandom.h" />
+    <ClInclude Include="..\src\main\decaf\security\SecureRandomSpi.h" />
+    <ClInclude Include="..\src\main\decaf\security\Security.h" />
+    <ClInclude Include="..\src\main\decaf\security\SecuritySpi.h" />
+    <ClInclude Include="..\src\main\decaf\security\SignatureException.h" />
+    <ClInclude Include="..\src\main\decaf\util\AbstractCollection.h" />
+    <ClInclude Include="..\src\main\decaf\util\AbstractList.h" />
+    <ClInclude Include="..\src\main\decaf\util\AbstractMap.h" />
+    <ClInclude Include="..\src\main\decaf\util\AbstractQueue.h" />
+    <ClInclude Include="..\src\main\decaf\util\AbstractSequentialList.h" />
+    <ClInclude Include="..\src\main\decaf\util\AbstractSet.h" />
+    <ClInclude Include="..\src\main\decaf\util\ArrayList.h" />
+    <ClInclude Include="..\src\main\decaf\util\Arrays.h" />
+    <ClInclude Include="..\src\main\decaf\util\BitSet.h" />
+    <ClInclude Include="..\src\main\decaf\util\Collection.h" />
+    <ClInclude Include="..\src\main\decaf\util\Collections.h" />
+    <ClInclude Include="..\src\main\decaf\util\Comparator.h" />
+    <ClInclude Include="..\src\main\decaf\util\comparators\Less.h" />
+    <ClInclude Include="..\src\main\decaf\util\ConcurrentModificationException.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\AbstractExecutorService.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\atomic\AtomicBoolean.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\atomic\AtomicInteger.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\atomic\AtomicRefCounter.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\atomic\AtomicReference.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\BlockingQueue.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\BrokenBarrierException.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\Callable.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\CancellationException.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\Concurrent.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\ConcurrentHashMap.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\ConcurrentMap.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\ConcurrentStlMap.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\CopyOnWriteArrayList.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\CopyOnWriteArraySet.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\CountDownLatch.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\Delayed.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\ExecutionException.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\Executor.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\Executors.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\ExecutorService.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\Future.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\FutureTask.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\LinkedBlockingQueue.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\Lock.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\locks\AbstractOwnableSynchronizer.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\locks\AbstractQueuedSynchronizer.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\locks\Condition.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\locks\Lock.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\locks\LockSupport.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\locks\ReadWriteLock.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\locks\ReentrantLock.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\locks\ReentrantReadWriteLock.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\Mutex.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\RejectedExecutionException.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\RejectedExecutionHandler.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\RunnableFuture.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\Semaphore.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\Synchronizable.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\SynchronousQueue.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\ThreadFactory.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\ThreadPoolExecutor.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\TimeoutException.h" />
+    <ClInclude Include="..\src\main\decaf\util\concurrent\TimeUnit.h" />
+    <ClInclude Include="..\src\main\decaf\util\Config.h" />
+    <ClInclude Include="..\src\main\decaf\util\Date.h" />
+    <ClInclude Include="..\src\main\decaf\util\Deque.h" />
+    <ClInclude Include="..\src\main\decaf\util\HashCode.h" />
+    <ClInclude Include="..\src\main\decaf\util\HashMap.h" />
+    <ClInclude Include="..\src\main\decaf\util\HashSet.h" />
+    <ClInclude Include="..\src\main\decaf\util\Iterator.h" />
+    <ClInclude Include="..\src\main\decaf\util\LinkedHashMap.h" />
+    <ClInclude Include="..\src\main\decaf\util\LinkedHashSet.h" />
+    <ClInclude Include="..\src\main\decaf\util\LinkedList.h" />
+    <ClInclude Include="..\src\main\decaf\util\List.h" />
+    <ClInclude Include="..\src\main\decaf\util\ListIterator.h" />
+    <ClInclude Include="..\src\main\decaf\util\logging\ConsoleHandler.h" />
+    <ClInclude Include="..\src\main\decaf\util\logging\ErrorManager.h" />
+    <ClInclude Include="..\src\main\decaf\util\logging\Filter.h" />
+    <ClInclude Include="..\src\main\decaf\util\logging\Formatter.h" />
+    <ClInclude Include="..\src\main\decaf\util\logging\Handler.h" />
+    <ClInclude Include="..\src\main\decaf\util\logging\Level.h" />
+    <ClInclude Include="..\src\main\decaf\util\logging\Logger.h" />
+    <ClInclude Include="..\src\main\decaf\util\logging\LoggerCommon.h" />
+    <ClInclude Include="..\src\main\decaf\util\logging\LoggerDefines.h" />
+    <ClInclude Include="..\src\main\decaf\util\logging\LoggerHierarchy.h" />
+    <ClInclude Include="..\src\main\decaf\util\logging\LogManager.h" />
+    <ClInclude Include="..\src\main\decaf\util\logging\LogRecord.h" />
+    <ClInclude Include="..\src\main\decaf\util\logging\LogWriter.h" />
+    <ClInclude Include="..\src\main\decaf\util\logging\MarkBlockLogger.h" />
+    <ClInclude Include="..\src\main\decaf\util\logging\PropertiesChangeListener.h" />
+    <ClInclude Include="..\src\main\decaf\util\logging\SimpleFormatter.h" />
+    <ClInclude Include="..\src\main\decaf\util\logging\SimpleLogger.h" />
+    <ClInclude Include="..\src\main\decaf\util\logging\StreamHandler.h" />
+    <ClInclude Include="..\src\main\decaf\util\logging\XMLFormatter.h" />
+    <ClInclude Include="..\src\main\decaf\util\LRUCache.h" />
+    <ClInclude Include="..\src\main\decaf\util\Map.h" />
+    <ClInclude Include="..\src\main\decaf\util\MapEntry.h" />
+    <ClInclude Include="..\src\main\decaf\util\NoSuchElementException.h" />
+    <ClInclude Include="..\src\main\decaf\util\PriorityQueue.h" />
+    <ClInclude Include="..\src\main\decaf\util\Properties.h" />
+    <ClInclude Include="..\src\main\decaf\util\Queue.h" />
+    <ClInclude Include="..\src\main\decaf\util\Random.h" />
+    <ClInclude Include="..\src\main\decaf\util\Set.h" />
+    <ClInclude Include="..\src\main\decaf\util\StlList.h" />
+    <ClInclude Include="..\src\main\decaf\util\StlMap.h" />
+    <ClInclude Include="..\src\main\decaf\util\StlQueue.h" />
+    <ClInclude Include="..\src\main\decaf\util\StlSet.h" />
+    <ClInclude Include="..\src\main\decaf\util\StringTokenizer.h" />
+    <ClInclude Include="..\src\main\decaf\util\Timer.h" />
+    <ClInclude Include="..\src\main\decaf\util\TimerTask.h" />
+    <ClInclude Include="..\src\main\decaf\util\UUID.h" />
+    <ClInclude Include="..\src\main\decaf\util\zip\Adler32.h" />
+    <ClInclude Include="..\src\main\decaf\util\zip\CheckedInputStream.h" />
+    <ClInclude Include="..\src\main\decaf\util\zip\CheckedOutputStream.h" />
+    <ClInclude Include="..\src\main\decaf\util\zip\Checksum.h" />
+    <ClInclude Include="..\src\main\decaf\util\zip\CRC32.h" />
+    <ClInclude Include="..\src\main\decaf\util\zip\DataFormatException.h" />
+    <ClInclude Include="..\src\main\decaf\util\zip\Deflater.h" />
+    <ClInclude Include="..\src\main\decaf\util\zip\DeflaterOutputStream.h" />
+    <ClInclude Include="..\src\main\decaf\util\zip\Inflater.h" />
+    <ClInclude Include="..\src\main\decaf\util\zip\InflaterInputStream.h" />
+    <ClInclude Include="..\src\main\decaf\util\zip\ZipException.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\main\activemq\commands\srcmakefile.mk" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5E5A9E11-9F2F-4819-AE41-CCA7D6029197}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>activemqcpp</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSSL|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSSL-DLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSSL|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSSL-DLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL-DLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL-DLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugSSL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugSSL-DLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugSSL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugSSL-DLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL-DLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL-DLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSSL|Win32'">
+    <OutDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
+    <OutDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSSL-DLL|Win32'">
+    <OutDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSSL|x64'">
+    <OutDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
+    <OutDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSSL-DLL|x64'">
+    <OutDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>libactivemq-cppd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSSL|Win32'">
+    <IntDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>libactivemq-cppd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
+    <IntDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>activemq-cppd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSSL-DLL|Win32'">
+    <IntDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>activemq-cppd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>libactivemq-cppd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSSL|x64'">
+    <IntDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>libactivemq-cppd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
+    <IntDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>activemq-cppd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSSL-DLL|x64'">
+    <IntDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>activemq-cppd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL|Win32'">
+    <OutDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
+    <OutDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL-DLL|Win32'">
+    <OutDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL|x64'">
+    <OutDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
+    <OutDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL-DLL|x64'">
+    <OutDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>libactivemq-cpp</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL|Win32'">
+    <IntDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>libactivemq-cpp</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
+    <IntDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>activemq-cpp</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL-DLL|Win32'">
+    <IntDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>activemq-cpp</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>libactivemq-cpp</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL|x64'">
+    <IntDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>libactivemq-cpp</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
+    <IntDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>activemq-cpp</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL-DLL|x64'">
+    <IntDir>$(SolutionDir)\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>activemq-cpp</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level2</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;NOMINMAX;APR_DECLARE_STATIC;APU_DECLARE_STATIC;API_DECLARE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../src/main;$(APR_DIST)\$(PlatformName)\include;$(OPENSSL_DIST)\$(PlatformName)\include;$(PLATFORM_SDK)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <CreateHotpatchableImage>false</CreateHotpatchableImage>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <DisableSpecificWarnings>4355</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)\libactivemq-cpp.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugSSL|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level2</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;NOMINMAX;APR_DECLARE_STATIC;APU_DECLARE_STATIC;API_DECLARE_STATIC;HAVE_OPENSSL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../src/main;$(APR_DIST)\$(PlatformName)\include;$(OPENSSL_DIST)\$(PlatformName)\include;$(PLATFORM_SDK)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <CreateHotpatchableImage>false</CreateHotpatchableImage>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <DisableSpecificWarnings>4355</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)\libactivemq-cpp.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level2</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;NOMINMAX;_USRDLL;CMS_DLL;CMS_EXPORTS;AMQCPP_DLL;AMQCPP_EXPORTS;DECAF_DLL;DECAF_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../src/main;$(APR_DIST)\$(PlatformName)\include;$(OPENSSL_DIST)\$(PlatformName)\include;$(PLATFORM_SDK)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <CreateHotpatchableImage>false</CreateHotpatchableImage>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <DisableSpecificWarnings>4355;4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(APR_DIST)\$(PlatformName)\lib;$(APR_DIST)\$(PlatformName)\bin;$(OPENSSL_DIST)\$(PlatformName)\lib;$(OPENSSL_DIST)\$(PlatformName)\bin;$(PLATFORM_SDK)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;libapr-1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)\libactivemq-cpp.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugSSL-DLL|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level2</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;NOMINMAX;_USRDLL;CMS_DLL;CMS_EXPORTS;AMQCPP_DLL;AMQCPP_EXPORTS;DECAF_DLL;DECAF_EXPORTS;HAVE_OPENSSL</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../src/main;$(APR_DIST)\$(PlatformName)\include;$(OPENSSL_DIST)\$(PlatformName)\include;$(PLATFORM_SDK)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <CreateHotpatchableImage>false</CreateHotpatchableImage>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <DisableSpecificWarnings>4355;4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(APR_DIST)\$(PlatformName)\lib;$(APR_DIST)\$(PlatformName)\bin;$(OPENSSL_DIST)\$(PlatformName)\lib;$(OPENSSL_DIST)\$(PlatformName)\bin;$(PLATFORM_SDK)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;libapr-1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)\libactivemq-cpp.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level2</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;NOMINMAX;APR_DECLARE_STATIC;APU_DECLARE_STATIC;API_DECLARE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../src/main;$(APR_DIST)\$(PlatformName)\include;$(OPENSSL_DIST)\$(PlatformName)\include;$(PLATFORM_SDK)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <CreateHotpatchableImage>false</CreateHotpatchableImage>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <DisableSpecificWarnings>4355</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)\libactivemq-cpp.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugSSL|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level2</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;NOMINMAX;APR_DECLARE_STATIC;APU_DECLARE_STATIC;API_DECLARE_STATIC;HAVE_OPENSSL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../src/main;$(APR_DIST)\$(PlatformName)\include;$(OPENSSL_DIST)\$(PlatformName)\include;$(PLATFORM_SDK)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <CreateHotpatchableImage>false</CreateHotpatchableImage>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <DisableSpecificWarnings>4355</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)\libactivemq-cpp.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level2</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;NOMINMAX;_USRDLL;CMS_DLL;CMS_EXPORTS;AMQCPP_DLL;AMQCPP_EXPORTS;DECAF_DLL;DECAF_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../src/main;$(APR_DIST)\$(PlatformName)\include;$(OPENSSL_DIST)\$(PlatformName)\include;$(PLATFORM_SDK)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <CreateHotpatchableImage>false</CreateHotpatchableImage>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <DisableSpecificWarnings>4355</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(APR_DIST)\$(PlatformName)\lib;$(APR_DIST)\$(PlatformName)\bin;$(OPENSSL_DIST)\$(PlatformName)\lib;$(OPENSSL_DIST)\$(PlatformName)\bin;$(PLATFORM_SDK)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;libapr-1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)\libactivemq-cpp.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugSSL-DLL|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level2</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;NOMINMAX;_USRDLL;CMS_DLL;CMS_EXPORTS;AMQCPP_DLL;AMQCPP_EXPORTS;DECAF_DLL;DECAF_EXPORTS;HAVE_OPENSSL</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../src/main;$(APR_DIST)\$(PlatformName)\include;$(OPENSSL_DIST)\$(PlatformName)\include;$(PLATFORM_SDK)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <CreateHotpatchableImage>false</CreateHotpatchableImage>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <DisableSpecificWarnings>4355</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(APR_DIST)\$(PlatformName)\lib;$(APR_DIST)\$(PlatformName)\bin;$(OPENSSL_DIST)\$(PlatformName)\lib;$(OPENSSL_DIST)\$(PlatformName)\bin;$(PLATFORM_SDK)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;libapr-1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)\libactivemq-cpp.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level2</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_LIB;NDEBUG;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;NOMINMAX;APR_DECLARE_STATIC;APU_DECLARE_STATIC;API_DECLARE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../src/main;$(APR_DIST)\$(PlatformName)\include;$(OPENSSL_DIST)\$(PlatformName)\include;$(PLATFORM_SDK)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CreateHotpatchableImage>false</CreateHotpatchableImage>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <DisableSpecificWarnings>4355</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)\libactivemq-cpp.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level2</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_LIB;NDEBUG;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;NOMINMAX;APR_DECLARE_STATIC;APU_DECLARE_STATIC;API_DECLARE_STATIC;HAVE_OPENSSL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../src/main;$(APR_DIST)\$(PlatformName)\include;$(OPENSSL_DIST)\$(PlatformName)\include;$(PLATFORM_SDK)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CreateHotpatchableImage>false</CreateHotpatchableImage>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <DisableSpecificWarnings>4355</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)\libactivemq-cpp.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level2</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;NOMINMAX;_USRDLL;CMS_DLL;CMS_EXPORTS;AMQCPP_DLL;AMQCPP_EXPORTS;DECAF_DLL;DECAF_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../src/main;$(APR_DIST)\$(PlatformName)\include;$(OPENSSL_DIST)\$(PlatformName)\include;$(PLATFORM_SDK)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CreateHotpatchableImage>false</CreateHotpatchableImage>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <DisableSpecificWarnings>4355;4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>ws2_32.lib;libapr-1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(APR_DIST)\$(PlatformName)\lib;$(APR_DIST)\$(PlatformName)\bin;$(OPENSSL_DIST)\$(PlatformName)\lib;$(OPENSSL_DIST)\$(PlatformName)\bin;$(PLATFORM_SDK)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)\libactivemq-cpp.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL-DLL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level2</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;NOMINMAX;_USRDLL;CMS_DLL;CMS_EXPORTS;AMQCPP_DLL;AMQCPP_EXPORTS;DECAF_DLL;DECAF_EXPORTS;HAVE_OPENSSL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../src/main;$(APR_DIST)\$(PlatformName)\include;$(OPENSSL_DIST)\$(PlatformName)\include;$(PLATFORM_SDK)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CreateHotpatchableImage>false</CreateHotpatchableImage>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <DisableSpecificWarnings>4355;4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>ws2_32.lib;libapr-1.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(APR_DIST)\$(PlatformName)\lib;$(APR_DIST)\$(PlatformName)\bin;$(OPENSSL_DIST)\$(PlatformName)\lib;$(OPENSSL_DIST)\$(PlatformName)\bin;$(PLATFORM_SDK)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)\libactivemq-cpp.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level2</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_LIB;NDEBUG;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;NOMINMAX;APR_DECLARE_STATIC;APU_DECLARE_STATIC;API_DECLARE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../src/main;$(APR_DIST)\$(PlatformName)\include;$(OPENSSL_DIST)\$(PlatformName)\include;$(PLATFORM_SDK)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CreateHotpatchableImage>false</CreateHotpatchableImage>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <DisableSpecificWarnings>4355</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)\libactivemq-cpp.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL|x64'">
+    <ClCompile>
+      <WarningLevel>Level2</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_LIB;NDEBUG;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;NOMINMAX;APR_DECLARE_STATIC;APU_DECLARE_STATIC;API_DECLARE_STATIC;HAVE_OPENSSL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../src/main;$(APR_DIST)\$(PlatformName)\include;$(OPENSSL_DIST)\$(PlatformName)\include;$(PLATFORM_SDK)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CreateHotpatchableImage>false</CreateHotpatchableImage>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <DisableSpecificWarnings>4355</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)\libactivemq-cpp.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
+    <ClCompile>
+      <WarningLevel>Level2</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;NOMINMAX;_USRDLL;CMS_DLL;CMS_EXPORTS;AMQCPP_DLL;AMQCPP_EXPORTS;DECAF_DLL;DECAF_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../src/main;$(APR_DIST)\$(PlatformName)\include;$(OPENSSL_DIST)\$(PlatformName)\include;$(PLATFORM_SDK)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CreateHotpatchableImage>false</CreateHotpatchableImage>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <DisableSpecificWarnings>4355</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(APR_DIST)\$(PlatformName)\lib;$(APR_DIST)\$(PlatformName)\bin;$(OPENSSL_DIST)\$(PlatformName)\lib;$(OPENSSL_DIST)\$(PlatformName)\bin;$(PLATFORM_SDK)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;libapr-1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)\libactivemq-cpp.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSSL-DLL|x64'">
+    <ClCompile>
+      <WarningLevel>Level2</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;NOMINMAX;_USRDLL;CMS_DLL;CMS_EXPORTS;AMQCPP_DLL;AMQCPP_EXPORTS;DECAF_DLL;DECAF_EXPORTS;HAVE_OPENSSL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../src/main;$(APR_DIST)\$(PlatformName)\include;$(OPENSSL_DIST)\$(PlatformName)\include;$(PLATFORM_SDK)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CreateHotpatchableImage>false</CreateHotpatchableImage>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <DisableSpecificWarnings>4355</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(APR_DIST)\$(PlatformName)\lib;$(APR_DIST)\$(PlatformName)\bin;$(OPENSSL_DIST)\$(PlatformName)\lib;$(OPENSSL_DIST)\$(PlatformName)\bin;$(PLATFORM_SDK)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;libapr-1.lib</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)\libactivemq-cpp.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

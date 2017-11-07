@@ -1,15 +1,15 @@
 --------------------------------------------------------------------------
-ActiveMQ CPP Library
+Decaf Library
 --------------------------------------------------------------------------
 
-ActiveMQ CPP is a messaging library that can use multiple protocols to
-talk to a MOM (e.g. ActiveMQ).
+Decaf is a C++ library providing a core Java API, making it easier to port
+Java code to C++.
 
 1 Dependencies
 --------------------------------------------------------------------------
 
 There are several dependencies that need to be met in order to build and
-install ActiveMQ-CPP on a Unix type system, the short list is shown below,
+install Decaf on a Unix type system, the short list is shown below,
 read the sections that follow for more detailed information.  On Windows
 you will not need the Auto Tools since the library is built using Microsft's
 Visual Studio product.
@@ -153,7 +153,7 @@ Run:
 
   make
 
-This will build all of the core ActiveMQ CPP source code.  To build and
+This will build all of the core Decaf source code.  To build and
 install the code into the system directories, run:
 
   make install
@@ -180,23 +180,6 @@ In order to build and run the suite of unit tests, run:
 This will verify that the library is functioning correctly on the target
 platform. In addition, it will generate the integration tests binary.
 
-4.2 Integration Tests
---------------------------------------------------------------------------
-The library also contains a set of tests that are run against a real AMQ
-broker.  These allow you to validate this distribution of ActiveMQ CPP
-against your broker.  Running these without a broker will result in failed
-tests.  The tests currently hard-code the broker url to be
-tcp://localhost:61613 for Stomp and tcp://localhost:61616 for Openwire.
-
-The integration tests are built via "make check".  To run them, first
-start a broker and then
-
-  cd src/test-integration
-  ./activemq-test-integration
-
-This will take quite some time to complete, so be patient.  It is recommended
-that you restart the broker between successive runs of the integration tests.
-
 5 Example
 --------------------------------------------------------------------------
 There are example applications that ship with the distribution in
@@ -216,10 +199,10 @@ However we do support using the MSVC compiler on Windows.
 There are a couple or things that you will need to setup to ensure that
 the MSVC compile succeeds.
 
-* When linking your application to the DLL version of the ActiveMQ-CPP library
+* When linking your application to the DLL version of the Decaf library
   you must link your app the the same runtime version that the DLL is linked to,
   otherwise your application will cause heap corruption when you delete objects
-  that are created in the ActiveMQ-CPP DLL's heap.
+  that are created in the Decaf DLL's heap.
 
 * You need to download and install the Platform SDK if you don't have it
   installed already.  On machines where you intend to use the built libraries

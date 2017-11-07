@@ -1,0 +1,803 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="decaf">
+      <UniqueIdentifier>{e80413dd-fdb3-4a89-b003-15a5a1e34483}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{f5c2f340-f7cc-401a-a106-b16c66dcbf72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\teamcity">
+      <UniqueIdentifier>{c1ca4491-4e97-43c5-8ac6-e1fbc8ea8b65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="decaf\internal">
+      <UniqueIdentifier>{5da4493c-5e6e-4528-a0bd-a10fa34de659}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="decaf\io">
+      <UniqueIdentifier>{217e0379-a9b8-4bcc-87af-a1e6822e4f7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="decaf\lang">
+      <UniqueIdentifier>{50eb9612-93d1-414e-841c-5f2b57906bde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="decaf\net">
+      <UniqueIdentifier>{67f32981-216c-473e-a556-d91e0959ef2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="decaf\nio">
+      <UniqueIdentifier>{657792f7-f05e-40ae-9bf9-0680996fbd0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="decaf\lang\exceptions">
+      <UniqueIdentifier>{efe57be7-3097-453b-887f-d202ef030351}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="decaf\security">
+      <UniqueIdentifier>{0cafa670-272a-434e-a290-ca87a160c8ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="decaf\net\ssl">
+      <UniqueIdentifier>{16cc4460-250d-4d4d-ab27-1561b5b2b9b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="decaf\util">
+      <UniqueIdentifier>{17f991b7-3a9a-4b28-8275-feffb067f2fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="decaf\util\concurrent">
+      <UniqueIdentifier>{31f74f69-ceea-469a-9d91-caf44c98de1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="decaf\util\logging">
+      <UniqueIdentifier>{afd5ce61-f228-4e81-9057-61eac2ae52a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="decaf\util\zip">
+      <UniqueIdentifier>{749cf364-6a0b-4b08-8191-a9354701f7c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="decaf\util\concurrent\atomic">
+      <UniqueIdentifier>{8b02dd72-ffd2-4639-b862-05c531c8d439}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="decaf\util\concurrent\locks">
+      <UniqueIdentifier>{a5011690-2cdf-4f64-80ba-a2c89625fcad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="decaf\internal\net">
+      <UniqueIdentifier>{1037096c-e320-4dae-a5a0-73c1e0749579}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="decaf\internal\nio">
+      <UniqueIdentifier>{3477218b-d749-4dd2-b70e-1775e7926822}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="decaf\internal\util">
+      <UniqueIdentifier>{785c35bc-aa0e-4133-9556-a4a029f8d7f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="decaf\internal\net\ssl">
+      <UniqueIdentifier>{5b012b27-4062-4b7e-ba03-b80521915915}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="decaf\internal\util\concurrent">
+      <UniqueIdentifier>{354cf4d8-9741-405b-82fc-fd04982215d3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\test\util\teamcity\TeamCityProgressListener.cpp">
+      <Filter>util\teamcity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\main.cpp" />
+    <ClCompile Include="..\src\test\testRegistry.cpp" />
+    <ClCompile Include="..\src\test\decaf\internal\net\URIEncoderDecoderTest.cpp">
+      <Filter>decaf\internal\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\internal\net\URIHelperTest.cpp">
+      <Filter>decaf\internal\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\internal\net\ssl\DefaultSSLSocketFactoryTest.cpp">
+      <Filter>decaf\internal\net\ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\internal\util\ByteArrayAdapterTest.cpp">
+      <Filter>decaf\internal\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\internal\util\TimerTaskHeapTest.cpp">
+      <Filter>decaf\internal\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\internal\util\concurrent\TransferQueueTest.cpp">
+      <Filter>decaf\internal\util\concurrent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\internal\util\concurrent\TransferStackTest.cpp">
+      <Filter>decaf\internal\util\concurrent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\internal\nio\BufferFactoryTest.cpp">
+      <Filter>decaf\internal\nio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\internal\nio\ByteArrayBufferTest.cpp">
+      <Filter>decaf\internal\nio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\internal\nio\CharArrayBufferTest.cpp">
+      <Filter>decaf\internal\nio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\internal\nio\DoubleArrayBufferTest.cpp">
+      <Filter>decaf\internal\nio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\internal\nio\FloatArrayBufferTest.cpp">
+      <Filter>decaf\internal\nio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\internal\nio\IntArrayBufferTest.cpp">
+      <Filter>decaf\internal\nio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\internal\nio\LongArrayBufferTest.cpp">
+      <Filter>decaf\internal\nio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\internal\nio\ShortArrayBufferTest.cpp">
+      <Filter>decaf\internal\nio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\io\BufferedInputStreamTest.cpp">
+      <Filter>decaf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\io\BufferedOutputStreamTest.cpp">
+      <Filter>decaf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\io\ByteArrayInputStreamTest.cpp">
+      <Filter>decaf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\io\ByteArrayOutputStreamTest.cpp">
+      <Filter>decaf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\io\DataInputStreamTest.cpp">
+      <Filter>decaf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\io\DataOutputStreamTest.cpp">
+      <Filter>decaf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\io\FilterInputStreamTest.cpp">
+      <Filter>decaf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\io\FilterOutputStreamTest.cpp">
+      <Filter>decaf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\io\InputStreamReaderTest.cpp">
+      <Filter>decaf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\io\InputStreamTest.cpp">
+      <Filter>decaf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\io\OutputStreamTest.cpp">
+      <Filter>decaf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\io\OutputStreamWriterTest.cpp">
+      <Filter>decaf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\io\PushbackInputStreamTest.cpp">
+      <Filter>decaf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\io\ReaderTest.cpp">
+      <Filter>decaf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\io\WriterTest.cpp">
+      <Filter>decaf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\lang\ArrayPointerTest.cpp">
+      <Filter>decaf\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\lang\BooleanTest.cpp">
+      <Filter>decaf\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\lang\ByteTest.cpp">
+      <Filter>decaf\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\lang\CharacterTest.cpp">
+      <Filter>decaf\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\lang\DoubleTest.cpp">
+      <Filter>decaf\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\lang\ExceptionTest.cpp">
+      <Filter>decaf\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\lang\FloatTest.cpp">
+      <Filter>decaf\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\lang\IntegerTest.cpp">
+      <Filter>decaf\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\lang\LongTest.cpp">
+      <Filter>decaf\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\lang\MathTest.cpp">
+      <Filter>decaf\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\lang\PointerTest.cpp">
+      <Filter>decaf\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\lang\ShortTest.cpp">
+      <Filter>decaf\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\lang\StringTest.cpp">
+      <Filter>decaf\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\lang\SystemTest.cpp">
+      <Filter>decaf\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\lang\ThreadLocalTest.cpp">
+      <Filter>decaf\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\lang\ThreadTest.cpp">
+      <Filter>decaf\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\net\Inet4AddressTest.cpp">
+      <Filter>decaf\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\net\Inet6AddressTest.cpp">
+      <Filter>decaf\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\net\InetAddressTest.cpp">
+      <Filter>decaf\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\net\ServerSocketTest.cpp">
+      <Filter>decaf\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\net\SocketFactoryTest.cpp">
+      <Filter>decaf\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\net\SocketTest.cpp">
+      <Filter>decaf\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\net\URISyntaxExceptionTest.cpp">
+      <Filter>decaf\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\net\URITest.cpp">
+      <Filter>decaf\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\net\URLDecoderTest.cpp">
+      <Filter>decaf\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\net\URLEncoderTest.cpp">
+      <Filter>decaf\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\net\ssl\SSLSocketFactoryTest.cpp">
+      <Filter>decaf\net\ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\AbstractCollectionTest.cpp">
+      <Filter>decaf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\AbstractListTest.cpp">
+      <Filter>decaf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\AbstractSequentialListTest.cpp">
+      <Filter>decaf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\ArrayListTest.cpp">
+      <Filter>decaf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\ArraysTest.cpp">
+      <Filter>decaf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\BitSetTest.cpp">
+      <Filter>decaf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\CollectionsTest.cpp">
+      <Filter>decaf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\DateTest.cpp">
+      <Filter>decaf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\Endian.cpp">
+      <Filter>decaf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\HashCodeTest.cpp">
+      <Filter>decaf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\HashMapTest.cpp">
+      <Filter>decaf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\HashSetTest.cpp">
+      <Filter>decaf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\LinkedHashMapTest.cpp">
+      <Filter>decaf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\LinkedHashSetTest.cpp">
+      <Filter>decaf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\LinkedListTest.cpp">
+      <Filter>decaf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\ListTest.cpp">
+      <Filter>decaf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\LRUCacheTest.cpp">
+      <Filter>decaf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\PriorityQueueTest.cpp">
+      <Filter>decaf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\PropertiesTest.cpp">
+      <Filter>decaf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\QueueTest.cpp">
+      <Filter>decaf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\RandomTest.cpp">
+      <Filter>decaf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\SetTest.cpp">
+      <Filter>decaf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\StlMapTest.cpp">
+      <Filter>decaf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\StringTokenizerTest.cpp">
+      <Filter>decaf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\TimerTest.cpp">
+      <Filter>decaf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\UUIDTest.cpp">
+      <Filter>decaf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\zip\Adler32Test.cpp">
+      <Filter>decaf\util\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\zip\CheckedInputStreamTest.cpp">
+      <Filter>decaf\util\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\zip\CheckedOutputStreamTest.cpp">
+      <Filter>decaf\util\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\zip\CRC32Test.cpp">
+      <Filter>decaf\util\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\zip\DeflaterOutputStreamTest.cpp">
+      <Filter>decaf\util\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\zip\DeflaterTest.cpp">
+      <Filter>decaf\util\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\zip\InflaterInputStreamTest.cpp">
+      <Filter>decaf\util\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\zip\InflaterTest.cpp">
+      <Filter>decaf\util\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\concurrent\AbstractExecutorServiceTest.cpp">
+      <Filter>decaf\util\concurrent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\concurrent\ConcurrentHashMapTest.cpp">
+      <Filter>decaf\util\concurrent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\concurrent\ConcurrentStlMapTest.cpp">
+      <Filter>decaf\util\concurrent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\concurrent\CopyOnWriteArrayListTest.cpp">
+      <Filter>decaf\util\concurrent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\concurrent\CopyOnWriteArraySetTest.cpp">
+      <Filter>decaf\util\concurrent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\concurrent\CountDownLatchTest.cpp">
+      <Filter>decaf\util\concurrent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\concurrent\ExecutorsTest.cpp">
+      <Filter>decaf\util\concurrent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\concurrent\ExecutorsTestSupport.cpp">
+      <Filter>decaf\util\concurrent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\concurrent\FutureTaskTest.cpp">
+      <Filter>decaf\util\concurrent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\concurrent\LinkedBlockingQueueTest.cpp">
+      <Filter>decaf\util\concurrent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\concurrent\MutexTest.cpp">
+      <Filter>decaf\util\concurrent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\concurrent\SemaphoreTest.cpp">
+      <Filter>decaf\util\concurrent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\concurrent\SynchronousQueueTest.cpp">
+      <Filter>decaf\util\concurrent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\concurrent\ThreadPoolExecutorTest.cpp">
+      <Filter>decaf\util\concurrent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\concurrent\TimeUnitTest.cpp">
+      <Filter>decaf\util\concurrent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\concurrent\atomic\AtomicBooleanTest.cpp">
+      <Filter>decaf\util\concurrent\atomic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\concurrent\atomic\AtomicIntegerTest.cpp">
+      <Filter>decaf\util\concurrent\atomic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\concurrent\atomic\AtomicReferenceTest.cpp">
+      <Filter>decaf\util\concurrent\atomic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\concurrent\locks\AbstractQueuedSynchronizerTest.cpp">
+      <Filter>decaf\util\concurrent\locks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\concurrent\locks\LockSupportTest.cpp">
+      <Filter>decaf\util\concurrent\locks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\concurrent\locks\ReentrantLockTest.cpp">
+      <Filter>decaf\util\concurrent\locks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\util\concurrent\locks\ReentrantReadWriteLockTest.cpp">
+      <Filter>decaf\util\concurrent\locks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\security\MessageDigestTest.cpp">
+      <Filter>decaf\security</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\security\SecureRandomTest.cpp">
+      <Filter>decaf\security</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\nio\BufferTest.cpp">
+      <Filter>decaf\nio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\activemq\transport\IOTransportTest.cpp">
+      <Filter>activemq\transport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\activemq\transport\TransportRegistryTest.cpp">
+      <Filter>activemq\transport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\lang\StringBufferTest.cpp">
+      <Filter>decaf\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\lang\StringBuilderTest.cpp">
+      <Filter>decaf\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test\decaf\net\URLTest.cpp">
+      <Filter>decaf\net</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\test\util\teamcity\TeamCityProgressListener.h">
+      <Filter>util\teamcity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\internal\net\URIEncoderDecoderTest.h">
+      <Filter>decaf\internal\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\internal\net\URIHelperTest.h">
+      <Filter>decaf\internal\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\internal\net\ssl\DefaultSSLSocketFactoryTest.h">
+      <Filter>decaf\internal\net\ssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\internal\util\ByteArrayAdapterTest.h">
+      <Filter>decaf\internal\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\internal\util\TimerTaskHeapTest.h">
+      <Filter>decaf\internal\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\internal\util\concurrent\TransferQueueTest.h">
+      <Filter>decaf\internal\util\concurrent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\internal\util\concurrent\TransferStackTest.h">
+      <Filter>decaf\internal\util\concurrent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\internal\nio\BufferFactoryTest.h">
+      <Filter>decaf\internal\nio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\internal\nio\ByteArrayBufferTest.h">
+      <Filter>decaf\internal\nio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\internal\nio\CharArrayBufferTest.h">
+      <Filter>decaf\internal\nio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\internal\nio\DoubleArrayBufferTest.h">
+      <Filter>decaf\internal\nio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\internal\nio\FloatArrayBufferTest.h">
+      <Filter>decaf\internal\nio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\internal\nio\IntArrayBufferTest.h">
+      <Filter>decaf\internal\nio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\internal\nio\LongArrayBufferTest.h">
+      <Filter>decaf\internal\nio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\internal\nio\ShortArrayBufferTest.h">
+      <Filter>decaf\internal\nio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\io\BufferedInputStreamTest.h">
+      <Filter>decaf\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\io\BufferedOutputStreamTest.h">
+      <Filter>decaf\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\io\ByteArrayInputStreamTest.h">
+      <Filter>decaf\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\io\ByteArrayOutputStreamTest.h">
+      <Filter>decaf\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\io\DataInputStreamTest.h">
+      <Filter>decaf\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\io\DataOutputStreamTest.h">
+      <Filter>decaf\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\io\FilterInputStreamTest.h">
+      <Filter>decaf\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\io\FilterOutputStreamTest.h">
+      <Filter>decaf\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\io\InputStreamReaderTest.h">
+      <Filter>decaf\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\io\InputStreamTest.h">
+      <Filter>decaf\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\io\OutputStreamTest.h">
+      <Filter>decaf\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\io\OutputStreamWriterTest.h">
+      <Filter>decaf\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\io\PushbackInputStreamTest.h">
+      <Filter>decaf\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\io\ReaderTest.h">
+      <Filter>decaf\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\io\WriterTest.h">
+      <Filter>decaf\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\lang\ArrayPointerTest.h">
+      <Filter>decaf\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\lang\BooleanTest.h">
+      <Filter>decaf\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\lang\ByteTest.h">
+      <Filter>decaf\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\lang\CharacterTest.h">
+      <Filter>decaf\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\lang\DoubleTest.h">
+      <Filter>decaf\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\lang\ExceptionTest.h">
+      <Filter>decaf\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\lang\FloatTest.h">
+      <Filter>decaf\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\lang\IntegerTest.h">
+      <Filter>decaf\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\lang\LongTest.h">
+      <Filter>decaf\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\lang\MathTest.h">
+      <Filter>decaf\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\lang\PointerTest.h">
+      <Filter>decaf\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\lang\ShortTest.h">
+      <Filter>decaf\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\lang\StringTest.h">
+      <Filter>decaf\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\lang\SystemTest.h">
+      <Filter>decaf\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\lang\ThreadLocalTest.h">
+      <Filter>decaf\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\lang\ThreadTest.h">
+      <Filter>decaf\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\net\Inet4AddressTest.h">
+      <Filter>decaf\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\net\Inet6AddressTest.h">
+      <Filter>decaf\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\net\InetAddressTest.h">
+      <Filter>decaf\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\net\ServerSocketTest.h">
+      <Filter>decaf\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\net\SocketFactoryTest.h">
+      <Filter>decaf\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\net\SocketTest.h">
+      <Filter>decaf\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\net\URISyntaxExceptionTest.h">
+      <Filter>decaf\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\net\URITest.h">
+      <Filter>decaf\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\net\URLDecoderTest.h">
+      <Filter>decaf\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\net\URLEncoderTest.h">
+      <Filter>decaf\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\net\ssl\SSLSocketFactoryTest.h">
+      <Filter>decaf\net\ssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\AbstractCollectionTest.h">
+      <Filter>decaf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\AbstractListTest.h">
+      <Filter>decaf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\AbstractSequentialListTest.h">
+      <Filter>decaf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\ArrayListTest.h">
+      <Filter>decaf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\ArraysTest.h">
+      <Filter>decaf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\BitSetTest.h">
+      <Filter>decaf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\CollectionsTest.h">
+      <Filter>decaf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\DateTest.h">
+      <Filter>decaf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\Endian.h">
+      <Filter>decaf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\HashCodeTest.h">
+      <Filter>decaf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\HashMapTest.h">
+      <Filter>decaf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\HashSetTest.h">
+      <Filter>decaf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\LinkedHashMapTest.h">
+      <Filter>decaf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\LinkedHashSetTest.h">
+      <Filter>decaf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\LinkedListTest.h">
+      <Filter>decaf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\ListTest.h">
+      <Filter>decaf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\LRUCacheTest.h">
+      <Filter>decaf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\PriorityQueueTest.h">
+      <Filter>decaf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\PropertiesTest.h">
+      <Filter>decaf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\QueueTest.h">
+      <Filter>decaf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\RandomTest.h">
+      <Filter>decaf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\SetTest.h">
+      <Filter>decaf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\StlMapTest.h">
+      <Filter>decaf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\StringTokenizerTest.h">
+      <Filter>decaf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\TimerTest.h">
+      <Filter>decaf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\UUIDTest.h">
+      <Filter>decaf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\zip\Adler32Test.h">
+      <Filter>decaf\util\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\zip\CheckedInputStreamTest.h">
+      <Filter>decaf\util\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\zip\CheckedOutputStreamTest.h">
+      <Filter>decaf\util\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\zip\CRC32Test.h">
+      <Filter>decaf\util\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\zip\DeflaterOutputStreamTest.h">
+      <Filter>decaf\util\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\zip\DeflaterTest.h">
+      <Filter>decaf\util\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\zip\InflaterInputStreamTest.h">
+      <Filter>decaf\util\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\zip\InflaterTest.h">
+      <Filter>decaf\util\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\concurrent\AbstractExecutorServiceTest.h">
+      <Filter>decaf\util\concurrent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\concurrent\ConcurrentHashMapTest.h">
+      <Filter>decaf\util\concurrent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\concurrent\ConcurrentStlMapTest.h">
+      <Filter>decaf\util\concurrent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\concurrent\CopyOnWriteArrayListTest.h">
+      <Filter>decaf\util\concurrent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\concurrent\CopyOnWriteArraySetTest.h">
+      <Filter>decaf\util\concurrent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\concurrent\CountDownLatchTest.h">
+      <Filter>decaf\util\concurrent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\concurrent\ExecutorsTest.h">
+      <Filter>decaf\util\concurrent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\concurrent\ExecutorsTestSupport.h">
+      <Filter>decaf\util\concurrent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\concurrent\FutureTaskTest.h">
+      <Filter>decaf\util\concurrent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\concurrent\LinkedBlockingQueueTest.h">
+      <Filter>decaf\util\concurrent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\concurrent\MutexTest.h">
+      <Filter>decaf\util\concurrent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\concurrent\SemaphoreTest.h">
+      <Filter>decaf\util\concurrent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\concurrent\SynchronousQueueTest.h">
+      <Filter>decaf\util\concurrent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\concurrent\ThreadPoolExecutorTest.h">
+      <Filter>decaf\util\concurrent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\concurrent\TimeUnitTest.h">
+      <Filter>decaf\util\concurrent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\concurrent\atomic\AtomicBooleanTest.h">
+      <Filter>decaf\util\concurrent\atomic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\concurrent\atomic\AtomicIntegerTest.h">
+      <Filter>decaf\util\concurrent\atomic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\concurrent\atomic\AtomicReferenceTest.h">
+      <Filter>decaf\util\concurrent\atomic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\concurrent\locks\AbstractQueuedSynchronizerTest.h">
+      <Filter>decaf\util\concurrent\locks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\concurrent\locks\LockSupportTest.h">
+      <Filter>decaf\util\concurrent\locks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\concurrent\locks\ReentrantLockTest.h">
+      <Filter>decaf\util\concurrent\locks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\util\concurrent\locks\ReentrantReadWriteLockTest.h">
+      <Filter>decaf\util\concurrent\locks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\security\MessageDigestTest.h">
+      <Filter>decaf\security</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\security\SecureRandomTest.h">
+      <Filter>decaf\security</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\nio\BufferTest.h">
+      <Filter>decaf\nio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\lang\StringBufferTest.h">
+      <Filter>decaf\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\lang\StringBuilderTest.h">
+      <Filter>decaf\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\test\decaf\net\URLTest.h">
+      <Filter>decaf\net</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

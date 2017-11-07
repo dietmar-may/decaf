@@ -25,11 +25,11 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.apache.activemq-cpp</groupId>
-  <artifactId>activemq-cpp-pom</artifactId>
+  <groupId>org.apache.decaf</groupId>
+  <artifactId>decaf-pom</artifactId>
   <version>3.9.5-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>ActiveMQ-CPP Project</name>
+  <name>Decaf Project</name>
   <inceptionYear>2007</inceptionYear>
   <prerequisites>
     <maven>3.1.1</maven>
@@ -40,7 +40,7 @@
     <url>http://www.apache.org/</url>
   </organization>
 
-  <url>http://activemq.apache.org/cms</url>
+  <url>https://github.com/dietmar-may/decaf</url>
 
   <licenses>
     <license>
@@ -63,14 +63,12 @@
     <source-version>1.7</source-version>
     <target-version>1.7</target-version>
 
-    <activemq-version>5.11.1</activemq-version>
-    <siteId>activemq-cpp-${activemq-version}</siteId>
-    <projectName>Apache ActiveMQ-CPP</projectName>
+    <decaf-version>5.11.1</decaf-version>
+    <siteId>decaf-${decaf-version}</siteId>
+    <projectName>Apache Decaf</projectName>
     <annogen-version>0.1.0</annogen-version>
     <ant-version>1.7.0</ant-version>
     <xstream-version>1.4.8</xstream-version>
-    <activemq-client-dir>${ACTIVEMQ_SRC_HOME}/activemq-client/</activemq-client-dir>
-    <activemq-cpp-openwire-generator-version>2.0</activemq-cpp-openwire-generator-version>
     <junit-version>4.12</junit-version>
 
     <assembly-plugin-version>2.4</assembly-plugin-version>
@@ -84,11 +82,10 @@
 
   <modules>
     <module>maven-cpptools-plugin</module>
-    <module>activemq-cpp-openwire-generator</module>
-    <module>activemq-cpp</module>
+    <module>decaf</module>
   </modules>
 
-  <distributionManagement>
+  <!-- distributionManagement>
     <repository>
       <id>release.apache.org</id>
       <name>ActiveMQ-CPP Release Repository</name>
@@ -99,24 +96,14 @@
       <name>ActiveMQ-CPP Snapshots Repository</name>
       <url>file:///home/tabish/dev/maven2/repo/snapshots</url>
     </snapshotRepository>
-  </distributionManagement>
+  </distributionManagement -->
 
   <scm>
-    <connection>scm:git:http://git-wip-us.apache.org/repos/asf/activemq-cpp.git</connection>
-    <developerConnection>scm:git:https://git-wip-us.apache.org/repos/asf/activemq-cpp.git</developerConnection>
-    <url>https://fisheye6.atlassian.com/browse/~br=master/activemq-cpp-git</url>
+    <connection>scm:git:http://github.com/dietmar-may/decaf.git</connection>
+    <developerConnection>scm:git:http://github.com/dietmar-may/decaf.git</developerConnection>
+    <url>http://github.com/dietmar-may/decaf</url>
     <tag>HEAD</tag>
   </scm>
-
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>org.apache.activemq-cpp</groupId>
-        <artifactId>activemq-cpp-openwire-generator</artifactId>
-        <version>${project.version}</version>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
 
   <build>
     <defaultGoal>test</defaultGoal>
@@ -160,7 +147,7 @@
           </configuration>
           <executions>
             <execution>
-              <id>AMQCPP-RAT-CHECK</id>
+              <id>DECAF-RAT-CHECK</id>
               <phase>verify</phase>
               <goals>
                 <goal>check</goal>
@@ -178,7 +165,7 @@
             <preparationGoals>clean install</preparationGoals>
             <arguments>-Prelease</arguments>
             <goals>deploy</goals>
-            <tagNameFormat>activemq-cpp-@{project.version}</tagNameFormat>
+            <tagNameFormat>decaf-@{project.version}</tagNameFormat>
           </configuration>
         </plugin>
       </plugins>
