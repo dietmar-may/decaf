@@ -39,7 +39,7 @@ namespace exceptions {
         RuntimeException();
 
         /**
-         * Conversion Constructor from some other ActiveMQException
+         * Conversion Constructor from some other Decaf Exception
          *
          * @param ex
          *      The Exception whose data is to be copied into this one.

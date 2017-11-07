@@ -48,7 +48,7 @@ check_Configure() {
 
     fi
 
-    if [ "x$runconfigure" -ne x ] ; then
+    if [ "x$runconfigure" != "x" ] ; then
         run_Configure
     fi
 

@@ -30,6 +30,6 @@ check_PROGRAMS = decaf-test
 ## 
 ## Compiler/Linker Options
 ##
-activemq_test_SOURCES = $(cc_sources)
-activemq_test_CXXFLAGS = $(DECAF_TEST_CXXFLAGS) -I$(srcdir)/../main @CPPUNIT_CFLAGS@
-activemq_test_LDADD= $(DECAF_TEST_LIBS) @CPPUNIT_LIBS@
+decaf_test_SOURCES = $(cc_sources)
+decaf_test_CXXFLAGS = $(DECAF_TEST_CXXFLAGS) -I$(srcdir)/../main @CPPUNIT_CFLAGS@
+decaf_test_LDADD= $(DECAF_TEST_LIBS) @CPPUNIT_LIBS@
