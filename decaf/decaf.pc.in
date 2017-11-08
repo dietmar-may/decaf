@@ -24,6 +24,6 @@ Name: Decaf Library
 Description: Decaf Java library for C++
 Version: @VERSION@
 Requires.private: @APR_PKGCONFIG@
-Libs: -L${libdir} -l@DECAF_LIBRARY_NAME@ -lpthread -ldl -luuid
-Cflags: -I${includedir}/@DECAF_LIBRARY_NAME@-@VERSION@
+Libs: -L${libdir} -l@DECAF_LIBRARY_NAME@-@VERSION@ -lpthread -ldl -luuid
+Cflags: -I${includedir}/@DECAF_LIBRARY_NAME@
 Libs.private = @DECAF_LIBS@

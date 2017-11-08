@@ -1,5 +1,5 @@
 Name:           decaf
-Version:        3.10.0
+Version:        3.9.4
 Release:        1%{?dist}
 Summary:        C++ Implementation of core Java classes
 
@@ -83,13 +83,13 @@ make %{?_smp_mflags} check
 
 %files
 %defattr(-,root,root,-)
-%{_libdir}/lib%{name}.so.*
+%{_libdir}/lib%{name}-%{version}.so.*
 %doc LICENSE.txt  NOTICE.txt  README.txt  RELEASE_NOTES.txt
 
 %files devel
 %defattr(-,root,root,-)
-%{_libdir}/lib%{name}.so
-%{_includedir}/%{name}-%{version}
+%{_libdir}/lib%{name}-%{version}.so
+%{_includedir}/%{name}
 %{_libdir}/pkgconfig/%{name}.pc
 %{_bindir}/decaf-config
 
