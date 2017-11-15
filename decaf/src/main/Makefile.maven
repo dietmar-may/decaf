@@ -35,5 +35,5 @@ libdecaf_la_LIBADD= $(DECAF_LIBS)
 ##
 ## Packaging Info
 ##
-library_includedir=$(includedir)/$(DECAF_LIBRARY_NAME)
+library_includedir=$(includedir)
 nobase_library_include_HEADERS = $(h_sources)

@@ -105,11 +105,11 @@ if test "$echo_exec_prefix" = "yes"; then
 fi
 
 if test "$echo_cflags" = "yes"; then
-    echo -I$includedir/@DECAF_LIBRARY_NAME@-@DECAF_API_VERSION@ @APR_INCLUDES@ @APR_CPPFLAGS@
+    echo -I$includedir @APR_INCLUDES@ @APR_CPPFLAGS@
 fi
 
 if test "$echo_includes" = "yes"; then
-    echo -I$includedir/@DECAF_LIBRARY_NAME@-@DECAF_API_VERSION@ @APR_INCLUDES@
+    echo -I$includedir @APR_INCLUDES@
 fi
 
 if test "$echo_libs" = "yes"; then
